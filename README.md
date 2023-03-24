@@ -8,5 +8,4 @@ A series of SwiftUI videos where we build a bottom sheet.
 
 ## Part 1
 
-![part-1](https://user-images.githubusercontent.com/1819208/227510696-7c085a4f-d437-425d-8ab6-f75f24277a6d.png)
-
+![part-1](https://user-images.githubusercontent.com/1819208/227510925-d291e1a5-6a27-4d05-a5a9-8cff39dac748.png)
