@@ -15,4 +15,5 @@ Topics:
 * `VStack`
 * `Image`
 * `.padding`
+* `onTapGesture`
 * SFSymbols
