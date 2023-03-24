@@ -1,4 +1,4 @@
-# BottomSheet
+# Bottom Sheetin SwiftUI
 
 A series of SwiftUI videos where we build a bottom sheet.
 
