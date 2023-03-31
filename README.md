@@ -22,7 +22,8 @@ Topics:
 
 ## Part 2
 
-![Simulator Screen Shot - iPhone 14 Pro Max - 2023-03-31 at 13 09 27](https://user-images.githubusercontent.com/1819208/229185706-93c9e5a9-8146-4387-bf1f-2cc917b8e57d.png)
+![Simulator Screen Shot - iPhone 14 Pro Max - 2023-03-31 at 13 09 27](https://user-images.githubusercontent.com/1819208/229186226-decce5aa-8f47-402e-9013-1e9a7c41fe15.png)
+
 
 Topics
 * `List`
