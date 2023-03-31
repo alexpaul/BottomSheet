@@ -17,3 +17,16 @@ Topics:
 * `.padding`
 * `onTapGesture`
 * SFSymbols
+
+***
+
+## Part 2
+
+![Simulator Screen Shot - iPhone 14 Pro Max - 2023-03-31 at 13 09 27](https://user-images.githubusercontent.com/1819208/229185706-93c9e5a9-8146-4387-bf1f-2cc917b8e57d.png)
+
+Topics
+* `List`
+* `ForEach`
+* `Spacer`
+* `.sheet(isPresented:_)`
+* `presentationDetents`
