@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ProfileList: View {
     var body: some View {
-      List {
-        ForEach(Profile.data, id:\.self) { profile in
-          ProfileView(profile: profile)
+        List {
+            ForEach(Profile.data, id:\.self) { profile in
+                ProfileView(profile: profile)
+            }
         }
-      }
     }
 }
 
