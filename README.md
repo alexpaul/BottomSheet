@@ -31,3 +31,15 @@ Topics
 * `Spacer`
 * `.sheet(isPresented:_)`
 * `presentationDetents`
+
+***
+
+## Part 3
+
+![Simulator Screen Shot - iPhone 14 Pro Max - 2023-04-08 at 20 58 51](https://user-images.githubusercontent.com/1819208/230748866-f2ac2711-5a45-4096-bcfa-3d70a219ae51.png)
+
+Topics 
+
+* `@State`
+* `@Binding`
+* `@Environment`
