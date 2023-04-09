@@ -9,6 +9,15 @@ import SwiftUI
 
 struct ProfileView: View {
     let profile: Profile
+
+    // Source of truth
+    // @State private var selectedProfile = Profile.data[0]
+
+    // creates a two-way communication between itself and
+    // other view
+    @Binding var selectedProfile: Profile
+
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         HStack {
@@ -19,11 +28,19 @@ struct ProfileView: View {
                 .cornerRadius(20)
             Text(profile.name)
             Spacer()
-            Image(systemName: "circle")
+            Image(systemName: selectedProfile == profile ? "button.programmable" : "circle")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .foregroundColor(.gray)
+                .foregroundColor(selectedProfile == profile ? .blue : .gray)
                 .frame(width: 30)
+                .onTapGesture {
+                    // changing `selectedProfile` will
+                    // re-render all views associated with
+                    // it
+                    selectedProfile = profile
+
+                    dismiss()
+                }
         }
         .padding(.horizontal, 20)
     }
@@ -31,6 +48,6 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView(profile: Profile.data[3])
+        ProfileView(profile: Profile.data[3], selectedProfile: .constant(Profile.data[3]))
     }
 }

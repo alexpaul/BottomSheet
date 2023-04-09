@@ -9,19 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isBottomSheetPresented = false
-    
-    private let profile = Profile.data[1]
-    
+
+    // Source of truth for selected profile
+    @State private var selectedProfile = Profile.data[3]
+
     var body: some View {
         VStack {
             VStack {
                 HStack {
-                    Image(profile.image)
+                    Image(selectedProfile.image)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 40, height: 40)
                         .cornerRadius(20)
-                    Text(profile.name)
+                    Text(selectedProfile.name)
                     Spacer()
                     Image(systemName: "chevron.down.circle")
                         .resizable()
@@ -40,13 +41,13 @@ struct ContentView: View {
             }
             .padding(.horizontal, 20)
             .padding(.bottom, 40)
-            Image(profile.image)
+            Image(selectedProfile.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
         }
         .sheet(isPresented: $isBottomSheetPresented) {
             // ProfileList() // full modal presentation
-            ProfileList()
+            ProfileList(selectedProfile: $selectedProfile)
                 .presentationDetents([
                     .fraction(0.3),
                     .medium,
